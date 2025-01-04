@@ -11,8 +11,6 @@ public:
         int j = (n - 1) / 2; // Midpoint for smaller half
         int k = n - 1;       // End for larger half
 
-        // Place small elements at even indices and large elements at odd
-        // indices
         for (int i = 0; i < n; i++) {
             if (i % 2 == 0) {
                 nums[i] = sorted[j--];
